@@ -15,7 +15,7 @@ class EmailParser
   end
   
   def parse
-    emails.split(/[,\s]/).delete_if {|e| 
+    emails.split(/[,\s]/).delete_if {|e| e = ""}
     binding.pry
   end
   
